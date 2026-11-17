@@ -38,7 +38,7 @@ def get_class_subsets(ids: list[str]) -> dict[str, int]:
     return {key: len(value) for key, value in sorted(class_dict.items(), key=lambda item: item[0]) if len(key) <= 3}
 
 
-df = pd.read_csv('metadata.csv')
+df = pd.read_csv(r"res\small_metadata.csv")
 
 id_list: list[str] = list(df["shelf_id"])
 
